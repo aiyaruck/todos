@@ -9,9 +9,29 @@
 
 <body>
     <div class="container">
-      <h1><strong><center><font size="10"><font color = "red"> todos </h1>
+      <center>
+      <h1><strong><font size="10"><font color = "red"> todos </h1>
       <input class="form-control" type="text" placeholder="What needs to be done ?" readonly>
-    </div>
+      <button type="submit" class="btn btn-info" style="width:80px; height:40px">Add</button>
+      </center>
+     </div>
+
+
+     <div class="container">
+       <table class="table table-striped">
+                 <thead>
+               <th style="width:10%"><font size="5"><font color = "blue"></th>
+               <th style="width:20%"><font size="5"><font color = "blue">List</th>
+               <th style="width:20%"><font size="5"><font color = "blue">Complete</th>
+             </thead>
+             <tbody>
+                 <label class="radio-inline">
+                 <td><input type="radio"></td>
+               </label>
+           </tbody>
+           </table>
+       </div>
+
 
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
@@ -19,4 +39,4 @@
     <script src="node_modules/angular/angular.js" charset="utf-8"></script>
 </body>
 
-</html>
+</html
