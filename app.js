@@ -16,7 +16,13 @@ angular.module('todoApp', [])
             self.todo.push(Todo)
         }
 
-        
+        self.Check = function(mes) {
+            if (mes.complete === false) {
+                mes.complete = true
+            } else if (mes.complete === true) {
+                mes.complete = false
+            }
+        }
     })
     .controller('listTodoController', function($scope, todoService) {
         $scope.todo = todoService.list()
